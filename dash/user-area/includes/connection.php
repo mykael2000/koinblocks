@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("mocha3040.mochahost.com", "exposur2_payx", "Koin125@6st!", "exposur2_payx");
+$con = mysqli_connect("lim115.truehost.cloud", "alhfchvs_koinblocks", "Koin125@6st!", "alhfchvs_koinblocks");
 
 // if ($con) {
 //     echo "connection successful";
