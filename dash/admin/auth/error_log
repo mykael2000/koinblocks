@@ -1,0 +1,3 @@
+[14-Mar-2023 08:27:40 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/hedgnexc/paystrem.com/admin/auth/login.php on line 11
+[14-Mar-2023 08:28:00 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/hedgnexc/paystrem.com/admin/auth/login.php on line 11
+[29-Mar-2023 15:40:29 UTC] PHP Warning:  mysqli_connect(): (08004/1040): Too many connections in /home/hedgnexc/paystrem.com/user-area/includes/connection.php on line 3
