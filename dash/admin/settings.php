@@ -29,10 +29,11 @@ if(isset($_POST['save'])){
         $upload_dir = "../dash/user-area/address/";
 
         // Move the uploaded file to the specified directory
-        move_uploaded_file($btc_tmp, $upload_dir);
-        move_uploaded_file($eth_tmp, $upload_dir);
-        move_uploaded_file($usdt_tmp, $upload_dir);
-
+        if(move_uploaded_file($btc_tmp, $upload_dir) && move_uploaded_file($eth_tmp, $upload_dir) && move_uploaded_file($usdt_tmp, $upload_dir)){
+            echo "<script>alert('Qr codes uploaded properly')</script>";
+        }else{
+            echo "<script>alert('Issues upuloading qrcode')</script>";
+        }
         $update = "UPDATE settings set btcwallet = '$btcaddress', ethwallet = '$ethaddress', usdtwallet = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr' WHERE id = '$settingsID'";
         $updateQuery = mysqli_query($con,$update);
 
