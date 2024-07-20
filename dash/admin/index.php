@@ -48,6 +48,7 @@ $queryWi = mysqli_query($con, $sqlWi);
                    <div class="brand-logo"><a class="mini-logo" href="index-2.html"><img src="images/logoi.png" alt="" width="40"></a></div>
                    <div class="search">
                       <a href="user.php" class="btn btn-primary pl-5 pm-5">View all user details</a>
+                      <a href="settings.php" class="btn btn-primary pl-5 pm-5">Website Settings</a>
                    </div>
                 </div>
                 <div class="header-right">
