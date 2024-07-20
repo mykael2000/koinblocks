@@ -8,16 +8,15 @@ $sqlUser = "SELECT * FROM settings";
 $queryUser = mysqli_query($con, $sqlUser);
 $getdetails = mysqli_fetch_assoc($queryUser);
 
-
+$settingsID = 1;
 
 
 if(isset($_POST['save'])){
-    $settingsID = 1;
+    
     $btcaddress = $_POST['btcaddress'];
     $ethaddress = $_POST['ethaddress'];
     $usdtaddress = $_POST['usdtaddress'];
-    $livechat = $_POST['livechat'];
-
+    
         $btcqr = $_FILES["btcqr"]["name"];
         $ethqr = $_FILES["ethqr"]["name"];
         $usdtqr = $_FILES["usdtqr"]["name"];
@@ -34,11 +33,18 @@ if(isset($_POST['save'])){
         move_uploaded_file($eth_tmp, $upload_dir . $ethqr);
         move_uploaded_file($usdt_tmp, $upload_dir . $usdtqr);
 
-        $update = "UPDATE settings set btcwallet = '$btcaddress', ethwallet = '$ethaddress', usdtwallet = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr', livechat = '$livechat' WHERE id = '$settingsID'";
+        $update = "UPDATE settings set btcwallet = '$btcaddress', ethwallet = '$ethaddress', usdtwallet = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr' WHERE id = '$settingsID'";
         $updateQuery = mysqli_query($con,$updateDeposits);
 
         header("location:settings.php");
         
+}
+if(isset($_POST['savelivechat'])){
+    $livechat = $_POST['livechat'];
+
+    $update = "UPDATE settings set livechat = '$livechat' WHERE id = '$settingsID'";
+    $updateQuery = mysqli_query($con,$updateDeposits);
+    header("location:settings.php");
 }
 
 ?>
@@ -245,6 +251,24 @@ if(isset($_POST['save'])){
                                                     name="usdtqr">
                                                     <img height="100px" width="100px" src="../user-area/address/<?php echo $getdetails['usdtqr']; ?>" alt="">
                                             </div>
+                                           
+                                            <div class="col-12">
+                                                <button name = "save" class="btn btn-primary pl-5 pr-5">Save</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Edit Settings</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form method="post" action = "" name="myform" class="personal_validate" novalidate="novalidate" enctype="multipart/form-data">
+                                        <div class="row g-4">
+                                            
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
                                                 <label class="form-label">Livechat</label>
                                                 <input type="text" class="form-control" placeholder="" value="<?php echo $getdetails['livechat']; ?>"
@@ -252,7 +276,7 @@ if(isset($_POST['save'])){
                                             </div>
                                             
                                             <div class="col-12">
-                                                <button name = "save" class="btn btn-primary pl-5 pr-5">Save</button>
+                                                <button name = "savelivechat" class="btn btn-primary pl-5 pr-5">Save</button>
                                             </div>
                                         </div>
                                     </form>
