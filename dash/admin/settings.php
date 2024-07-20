@@ -11,38 +11,36 @@ $getdetails = mysqli_fetch_assoc($queryUser);
 
 
 
-if(isset($_POST['editDeposits'])){
-    $activeDeposits = $_POST['activeDeposits'];
-    $totalBalance = $_POST['totalBalance'];
-    $totalEarnings = $_POST['totalEarnings'];
-    $totalReferrals = $_POST['totalReferrals'];
-    $totalDeposits = $_POST['totalDeposits'];
-    $totalWithdrawal = $_POST['totalWithdrawal'];
-    $pendingWithdrawal = $_POST['pendingWithdrawal'];
-    $updateDeposits = "UPDATE clients set active_deposits = '$activeDeposits', total_balance = '$totalBalance', total_earnings = '$totalEarnings', total_referrals=  '$totalReferrals', total_deposits = '$totalDeposits', total_withdrawals = '$totalWithdrawal', pending_withdrawal = '$pendingWithdrawal' WHERE id = '$userid'";
-    $updateQuery = mysqli_query($con,$updateDeposits);
+if(isset($_POST['save'])){
+    $settingsID = 1;
+    $btcaddress = $_POST['btcaddress'];
+    $ethaddress = $_POST['ethaddress'];
+    $usdtaddress = $_POST['usdtaddress'];
+    $livechat = $_POST['livechat'];
 
-    header("location:edit.php?id=$userid");
+        $btcqr = $_FILES["btcqr"]["name"];
+        $ethqr = $_FILES["ethqr"]["name"];
+        $usdtqr = $_FILES["usdtqr"]["name"];
+        
+        $btc_tmp = $_FILES["btcqr"]["tmp_name"];
+        $eth_tmp = $_FILES["ethqr"]["tmp_name"];
+        $usdt_tmp = $_FILES["usdtqr"]["tmp_name"];
 
+        // Specify upload directory
+        $upload_dir = "../dash/user-area/address/";
+
+        // Move the uploaded file to the specified directory
+        move_uploaded_file($btc_tmp, $upload_dir . $btcqr);
+        move_uploaded_file($eth_tmp, $upload_dir . $ethqr);
+        move_uploaded_file($usdt_tmp, $upload_dir . $usdtqr);
+
+        $update = "UPDATE settings set btcaddress = '$btcaddress', ethaddress = '$ethaddress', usdtaddress = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr', livechat = '$livechat' WHERE id = '$settingsID'";
+        $updateQuery = mysqli_query($con,$updateDeposits);
+
+        header("location:settings.php");
+        
 }
-if(isset($_POST['addDeposit'])){
-    $tranx_id = rand(0000,9999);
-    $username = $getdetails['username'];
-    $paidvia = $_POST['paidvia'];
-    $amount = $_POST['amount'];
-    $plan = $_POST['plan'];
-    if(empty($_POST['investmet_status'])){
-        $investment_status = "not-atcive";
-    }else{
-        $investment_status = $_POST['investment_status'];
-    }
-    $created_at = $_POST['created_at'];
 
-    $addsql = "INSERT into deposits (client_id, username, tranx_id, plan, paid_via, amount, status, created_at) VALUES ('$userid','$username','$tranx_id','$plan','$paidvia','$amount','$investment_status','$created_at')";
-    $addquery = mysqli_query($con,$addsql);
-
-    echo "<script>alert('Deposit has been added successfully')</script>";
-}
 ?>
 
 
@@ -254,51 +252,7 @@ if(isset($_POST['addDeposit'])){
                                             </div>
                                             
                                             <div class="col-12">
-                                                <button name = "editDeposits" class="btn btn-primary pl-5 pr-5">Save</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Create Deposit</h4>
-                                </div>
-                                <div class="card-body">
-                                    <form method="post" action = "" name="myform" class="personal_validate" novalidate="novalidate">
-                                        <div class="row g-4">
-                                            <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                                <label class="form-label">Paid Via</label>
-                                                <input type="text" class="form-control" placeholder="Enter Payment Method"
-                                                    name="paidvia" >
-                                            </div>
-                                            <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                                <label class="form-label">Plan</label>
-                                                <input type="text" class="form-control" placeholder="Enter Plan"
-                                                    name="plan" >
-                                            </div>
-                                            <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                                <label class="form-label">Amount</label>
-                                                <input type="number" class="form-control" placeholder="Enter Amount"
-                                                    name="amount" >
-                                            </div>
-                                            <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                                <label class="form-label">Investment Status</label>
-                                                <select name="investment_status">
-                                                    <option value="">--select--</option>
-                                                    <option value="active">Active</option>
-                                                    <option value="not-active">Not active</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                                <label class="form-label">Date of deposit</label>
-                                                <input type="date" class="form-control" name="created_at">
-                                            </div>
-                                            
-                                            <div class="col-12">
-                                                <button name = "addDeposit" class="btn btn-primary pl-5 pr-5">Create deposit</button>
+                                                <button name = "save" class="btn btn-primary pl-5 pr-5">Save</button>
                                             </div>
                                         </div>
                                     </form>
