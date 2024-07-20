@@ -34,7 +34,7 @@ if(isset($_POST['save'])){
         move_uploaded_file($eth_tmp, $upload_dir . $ethqr);
         move_uploaded_file($usdt_tmp, $upload_dir . $usdtqr);
 
-        $update = "UPDATE settings set btcaddress = '$btcaddress', ethaddress = '$ethaddress', usdtaddress = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr', livechat = '$livechat' WHERE id = '$settingsID'";
+        $update = "UPDATE settings set btcwaller = '$btcaddress', ethwallet = '$ethaddress', usdtwallet = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr', livechat = '$livechat' WHERE id = '$settingsID'";
         $updateQuery = mysqli_query($con,$updateDeposits);
 
         header("location:settings.php");
