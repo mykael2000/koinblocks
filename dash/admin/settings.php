@@ -3,12 +3,12 @@
 include('../user-area/includes/connection.php');
 session_start();
 
+$settingsID = 1;
 
-$sqlUser = "SELECT * FROM settings";
+$sqlUser = "SELECT * FROM settings WHERE id = '$settingsID'";
 $queryUser = mysqli_query($con, $sqlUser);
 $getdetails = mysqli_fetch_assoc($queryUser);
 
-$settingsID = 1;
 
 
 if(isset($_POST['save'])){
