@@ -34,7 +34,7 @@ if(isset($_POST['save'])){
         move_uploaded_file($usdt_tmp, $upload_dir . $usdtqr);
 
         $update = "UPDATE settings set btcwallet = '$btcaddress', ethwallet = '$ethaddress', usdtwallet = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr' WHERE id = '$settingsID'";
-        $updateQuery = mysqli_query($con,$updateDeposits);
+        $updateQuery = mysqli_query($con,$update);
 
         header("location:settings.php");
         
@@ -43,7 +43,7 @@ if(isset($_POST['savelivechat'])){
     $livechat = $_POST['livechat'];
 
     $update = "UPDATE settings set livechat = '$livechat' WHERE id = '$settingsID'";
-    $updateQuery = mysqli_query($con,$updateDeposits);
+    $updateQuery = mysqli_query($con,$update);
     header("location:settings.php");
 }
 
@@ -266,7 +266,7 @@ if(isset($_POST['savelivechat'])){
                                     <h4 class="card-title">Edit Settings</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form method="post" action = "" name="myform" class="personal_validate" novalidate="novalidate" enctype="multipart/form-data">
+                                    <form method="post" action = "" name="myform" class="personal_validate">
                                         <div class="row g-4">
                                             
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
