@@ -270,7 +270,7 @@ if(isset($_POST['savelivechat'])){
                                         <div class="row g-4">
                                             
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                                <label class="form-label">Livechat</label>
+                                                <label class="form-label">Livechat code</label>
                                                 <input type="text" class="form-control" placeholder="" value="<?php echo $getdetails['livechat']; ?>"
                                                     name="livechat">
                                             </div>
