@@ -29,9 +29,9 @@ if(isset($_POST['save'])){
         $upload_dir = "../dash/user-area/address/";
 
         // Move the uploaded file to the specified directory
-        move_uploaded_file($btc_tmp, $upload_dir . $btcqr);
-        move_uploaded_file($eth_tmp, $upload_dir . $ethqr);
-        move_uploaded_file($usdt_tmp, $upload_dir . $usdtqr);
+        move_uploaded_file($btc_tmp, $upload_dir);
+        move_uploaded_file($eth_tmp, $upload_dir);
+        move_uploaded_file($usdt_tmp, $upload_dir);
 
         $update = "UPDATE settings set btcwallet = '$btcaddress', ethwallet = '$ethaddress', usdtwallet = '$usdtaddress', btcqr = '$btcqr', ethqr = '$ethqr', usdtqr = '$usdtqr' WHERE id = '$settingsID'";
         $updateQuery = mysqli_query($con,$update);
