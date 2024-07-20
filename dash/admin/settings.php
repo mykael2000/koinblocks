@@ -220,7 +220,7 @@ if(isset($_POST['savelivechat'])){
                                         <div class="row g-4">
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
                                                 <label class="form-label">BTC Address</label>
-                                                <input type="text" class="form-control" placeholder="<?php echo $getdetails['btcaddress']; ?>"
+                                                <input type="text" class="form-control" placeholder="<?php echo $getdetails['btcwallet']; ?>"
                                                     name="btcaddress">
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
@@ -231,7 +231,7 @@ if(isset($_POST['savelivechat'])){
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
                                                 <label class="form-label">ETH Address</label>
-                                                <input type="text" class="form-control" placeholder="<?php echo $getdetails['ethaddress']; ?>"
+                                                <input type="text" class="form-control" placeholder="<?php echo $getdetails['ethwallet']; ?>"
                                                     name="ethaddress">
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
@@ -242,7 +242,7 @@ if(isset($_POST['savelivechat'])){
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
                                                 <label class="form-label">USDT Address</label>
-                                                <input type="text" class="form-control" placeholder="<?php echo $getdetails['usdtaddress']; ?>"
+                                                <input type="text" class="form-control" placeholder="<?php echo $getdetails['usdtwallet']; ?>"
                                                     name="usdtaddress">
                                             </div>
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
