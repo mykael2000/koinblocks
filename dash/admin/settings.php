@@ -26,7 +26,7 @@ if(isset($_POST['save'])){
         $usdt_tmp = $_FILES["usdtqr"]["tmp_name"];
 
         // Specify upload directory
-        $upload_dir = "../dash/user-area/address/";
+        $upload_dir = "../user-area/address/";
 
         // Move the uploaded file to the specified directory
         if(move_uploaded_file($btc_tmp, $upload_dir) && move_uploaded_file($eth_tmp, $upload_dir) && move_uploaded_file($usdt_tmp, $upload_dir)){
