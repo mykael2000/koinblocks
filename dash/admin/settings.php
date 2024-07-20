@@ -3,8 +3,8 @@
 include('../user-area/includes/connection.php');
 session_start();
 
-$userid = $_GET['id'];
-$sqlUser = "SELECT * FROM clients WHERE id = '$userid'";
+
+$sqlUser = "SELECT * FROM settings";
 $queryUser = mysqli_query($con, $sqlUser);
 $getdetails = mysqli_fetch_assoc($queryUser);
 
@@ -212,7 +212,7 @@ if(isset($_POST['addDeposit'])){
                                     <h4 class="card-title">Edit Settings</h4>
                                 </div>
                                 <div class="card-body">
-                                    <form method="post" action = "" name="myform" class="personal_validate" novalidate="novalidate">
+                                    <form method="post" action = "" name="myform" class="personal_validate" novalidate="novalidate" enctype="multipart/form-data">
                                         <div class="row g-4">
                                             <div class="col-xxl-6 col-xl-6 col-lg-6">
                                                 <label class="form-label">BTC Address</label>
