@@ -14,6 +14,13 @@ $Desql = "INSERT into deposits (client_id, username, tranx_id, plan, paid_via, a
 $Dequery = mysqli_query($con,$Desql);
 
 echo "<script>alert('Please always reconfirm the deposit wallet address on your account before every deposit. To do this, kindly contact the support team via the live chat')</script>";
+
+$settingsID = 1;
+
+$sqlUser = "SELECT * FROM settings WHERE id = '$settingsID'";
+$queryUser = mysqli_query($con, $sqlUser);
+$getaddress = mysqli_fetch_assoc($queryUser);
+
 ?>
 <div class="wrapper">
     <div class="container-fluid">
@@ -61,7 +68,7 @@ echo "<script>alert('Please always reconfirm the deposit wallet address on your 
                                     <p>Note that you must confirm address from support.</p>
                                     <div class="input-group">
                                         <input type="text" class="form-control"
-                                            value="bc1qe8xpd9h8mup9r8texrwezw7yr7jdwqxkvfvpgx" id="myInput">
+                                            value="<?php echo $getaddress['btcwallet']; ?>" id="myInput">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-primary" onclick="myFunction()">COPY</button>
                                         </div>
@@ -69,7 +76,7 @@ echo "<script>alert('Please always reconfirm the deposit wallet address on your 
                                 </div>
                                 <div class="col-md-4">
                                     <img style="position: relative; bottom: 310px; right:50px;" height="270px"
-                                        width="270px;" src="address/payxbtc.jpeg">
+                                        width="270px;" src="address/<?php echo $getaddress['btcqr']; ?>">
                                 </div>
                             </div>
                         </div>
@@ -107,7 +114,7 @@ echo "<script>alert('Please always reconfirm the deposit wallet address on your 
                                     <p>Note that you must confirm address from support.</p>
                                     <div class="input-group">
                                         <input type="text" class="form-control"
-                                            value="0x8FaCc2Ed16db406201A2Ca803F89767f848C573d" id="myInputeth">
+                                            value="<?php echo $getaddress['ethwallet']; ?>" id="myInputeth">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-primary" onclick="myFunctioneth()">COPY</button>
                                         </div>
@@ -115,7 +122,7 @@ echo "<script>alert('Please always reconfirm the deposit wallet address on your 
                                 </div>
                                 <div class="col-md-4">
                                     <img style="position: relative; bottom: 250px; right:50px;" height="230px"
-                                        width="230px;" src="address/payxeth.jpeg">
+                                        width="230px;" src="address/<?php echo $getaddress['ethqr']; ?>">
                                 </div>
                             </div>
                         </div>
@@ -152,7 +159,7 @@ echo "<script>alert('Please always reconfirm the deposit wallet address on your 
                                     <p>Note that you must confirm address from support.</p>
                                     <div class="input-group">
                                         <input type="text" class="form-control"
-                                            value="0x8FaCc2Ed16db406201A2Ca803F89767f848C573d" id="myInputUsdt">
+                                            value="<?php echo $getaddress['usdtwallet']; ?>" id="myInputUsdt">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-primary" onclick="myFunctionUsdt()">COPY</button>
                                         </div>
@@ -160,7 +167,7 @@ echo "<script>alert('Please always reconfirm the deposit wallet address on your 
                                 </div>
                                 <div class="col-md-4">
                                     <img style="position: relative; bottom: 250px; right:50px;" height="230px"
-                                        width="230px;" src="address/payxusdt.jpeg">
+                                        width="230px;" src="address/<?php echo $getaddress['usdtqr']; ?>">
                                 </div>
                             </div>
                         </div>
