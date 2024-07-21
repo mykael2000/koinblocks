@@ -7,4 +7,4 @@ $sqlUser = "SELECT * FROM settings WHERE id = '$settingsID'";
 $queryUser = mysqli_query($con, $sqlUser);
 $getde = mysqli_fetch_assoc($queryUser);
 
-echo $getde['livechat'];
+echo htmlspecialchars_decode($getde['livechat']);
