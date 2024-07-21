@@ -60,6 +60,7 @@ function googleTranslateElementInit() {
     }, 'google_translate_element');
 }
 </script>
+<?php include("livechat.php"); ?>
 </body>
 
 <!-- Mirrored from template.viserlab.com/hyiplab/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 17:24:58 GMT -->
