@@ -32,7 +32,7 @@ include("includes/header.php");
 <div class="cureency-section">
     <div class="container">
         <div class="row mb-none-30">
-            <div class="col-lg-4 col-sm-6 cureency-item mb-30">
+            <div class="col-lg-4 col-sm-4 cureency-item mb-30">
                 <div class="cureency-card text-center">
                     <h6 class="cureency-card__title text-white">Countries Supported</h6>
                     <span class="cureency-card__amount h-font-family font-weight-600 base--color">190+</span>
@@ -40,7 +40,7 @@ include("includes/header.php");
                 <!-- cureency-card end -->
             </div>
             <!-- cureency-item end -->
-            <div class="col-lg-4 col-sm-6 cureency-item mb-30">
+            <div class="col-lg-4 col-sm-4 cureency-item mb-30">
                 <div class="cureency-card text-center">
                     <h6 class="cureency-card__title text-white">Accounts Created</h6>
                     <span class="cureency-card__amount h-font-family font-weight-600 base--color">13m+ Users</span>
@@ -48,7 +48,7 @@ include("includes/header.php");
                 <!-- cureency-card end -->
             </div>
             <!-- cureency-item end -->
-            <div class="col-lg-4 col-sm-6 cureency-item mb-30">
+            <div class="col-lg-4 col-sm-4 cureency-item mb-30">
                 <div class="cureency-card text-center">
                     <h6 class="cureency-card__title text-white">Date Established</h6>
                     <span class="cureency-card__amount h-font-family font-weight-600 base--color">2018</span>
@@ -134,7 +134,7 @@ include("includes/header.php");
     <img src="rotationearth.gif" style="height: 300px; width: 300px" />
 </div>
 <!-- choose us section start -->
-<section class="pt-120 pb-120 overlay--radial bg_img" data-background="assets/images/bg/bg-3.jpg">
+<section class="pt-120 pb-120 overlay--radial bg_img" data-background="">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
