@@ -413,7 +413,7 @@ include("includes/header.php");
 </section><!-- /Features Section -->
 
 <!-- choose us section start -->
-<section class="pt-120 pb-120 overlay--radial bg_img" data-background="assets/images/bg/bg-3.jpg">
+<section class="pt-120 pb-120 overlay--radial bg_img" data-background="">
     <div class="container">
         <!-- row end -->
         <div class="row justify-content-center mb-none-30">
