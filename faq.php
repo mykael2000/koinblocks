@@ -2,7 +2,7 @@
 include("includes/header.php");
 ?>
 <!-- inner hero start -->
-<section class="inner-hero bg_img" data-background="assets/images/bg/bg-1.jpg">
+<section class="inner-hero bg_img" data-background="assets/images/bg/patrycja-chociej-ridmdLS6QbY-unsplash.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">

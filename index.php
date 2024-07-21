@@ -2,7 +2,7 @@
 include("includes/header.php");
 ?>
 <!-- hero start -->
-<section class="hero bg_img" data-background="assets/images/bg/hero.jpg">
+<section class="hero bg_img" data-background="assets/images/bg/patrycja-chociej-ridmdLS6QbY-unsplash.jpg">
     <div class="container">
         <div class="row">
             <div class="col-xl-5 col-lg-8">
@@ -62,7 +62,7 @@ include("includes/header.php");
 <!-- cureency section end  -->
 
 <!-- about section start -->
-<section class="about-section pt-120 pb-120 bg_img" data-background="assets/images/bg/bg-2.jpg">
+<section class="about-section pt-120 pb-120 bg_img" data-background="assets/images/bg/patrycja-chociej-ridmdLS6QbY-unsplash.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-6">
@@ -508,22 +508,7 @@ include("includes/header.php");
                 </div>
                 <!-- choose-card end -->
             </div>
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="choose-card border-radius--5">
-                    <div class="choose-card__header mb-3">
-                        <div class="choose-card__icon">
-                            <i class="las la-headset"></i>
-                        </div>
-                        <h4 class="choose-card__title base--color">24/7 Support</h4>
-                    </div>
-                    <p>
-                        We provide 24/7 customer support through e-mail and telegram. Our
-                        support representatives are periodically available to elucidate any
-                        difficulty..
-                    </p>
-                </div>
-                <!-- choose-card end -->
-            </div>
+            
             <div class="col-xl-4 col-md-6 mb-30">
                 <div class="choose-card border-radius--5">
                     <div class="choose-card__header mb-3">
@@ -639,44 +624,6 @@ include("includes/header.php");
             </div>
         </div>
         <!-- row end -->
-        <div class="row justify-content-center mb-none-30">
-            <div class="col-lg-4 col-md-6 work-item mb-30">
-                <div class="work-card text-center">
-                    <div class="work-card__icon">
-                        <i class="las la-user base--color"></i>
-                        <span class="step-number">01</span>
-                    </div>
-                    <div class="work-card__content">
-                        <h4 class="base--color mb-3">Create Account</h4>
-                    </div>
-                </div>
-                <!-- work-card end -->
-            </div>
-            <div class="col-lg-4 col-md-6 work-item mb-30">
-                <div class="work-card text-center">
-                    <div class="work-card__icon">
-                        <i class="las la-hand-holding-usd base--color"></i>
-                        <span class="step-number">02</span>
-                    </div>
-                    <div class="work-card__content">
-                        <h4 class="base--color mb-3">Invest To Plan</h4>
-                    </div>
-                </div>
-                <!-- work-card end -->
-            </div>
-            <div class="col-lg-4 col-md-6 work-item mb-30">
-                <div class="work-card text-center">
-                    <div class="work-card__icon">
-                        <i class="las la-wallet base--color"></i>
-                        <span class="step-number">03</span>
-                    </div>
-                    <div class="work-card__content">
-                        <h4 class="base--color mb-3">Get Profit</h4>
-                    </div>
-                </div>
-                <!-- work-card end -->
-            </div>
-        </div>
     </div>
 </section>
 <!-- how work section end  -->

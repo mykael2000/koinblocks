@@ -2,8 +2,7 @@
 include("includes/header.php");
 ?>
 <!-- inner hero start -->
-<section class="inner-hero bg_img" data-background="assets/images/bg/bg-1.jpg">
-    <div class="container">
+<section class="inner-hero bg_img" data-background="assets/images/bg/bg-1.jpgpatrycja-chociej-ridmdLS6QbY-unsplash.jpg
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="page-title">About Us</h2>
@@ -16,61 +15,9 @@ include("includes/header.php");
     </div>
 </section>
 <!-- inner hero end -->
-<!-- how work section start -->
-<section class="pt-120 pb-120 bg_img" data-background="assets/images/bg/bg-5.jpg">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 text-center">
-                <div class="section-header">
-                    <h2 class="section-title"><span class="font-weight-normal">How</span> <b
-                            class="base--color">Hyiplab</b> <span class="font-weight-normal">Works</span></h2>
-                    <p>Get involved in our tremendous platform and Invest. We will utilize your money and give you
-                        profit in your wallet automatically.</p>
-                </div>
-            </div>
-        </div><!-- row end -->
-        <div class="row justify-content-center mb-none-30">
-            <div class="col-lg-4 col-md-6 work-item mb-30">
-                <div class="work-card text-center">
-                    <div class="work-card__icon">
-                        <i class="las la-user base--color"></i>
-                        <span class="step-number">01</span>
-                    </div>
-                    <div class="work-card__content">
-                        <h4 class="base--color mb-3">Create Account</h4>
-                    </div>
-                </div><!-- work-card end -->
-            </div>
-            <div class="col-lg-4 col-md-6 work-item mb-30">
-                <div class="work-card text-center">
-                    <div class="work-card__icon">
-                        <i class="las la-hand-holding-usd base--color"></i>
-                        <span class="step-number">02</span>
-                    </div>
-                    <div class="work-card__content">
-                        <h4 class="base--color mb-3">Invest To Plan</h4>
-                    </div>
-                </div><!-- work-card end -->
-            </div>
-            <div class="col-lg-4 col-md-6 work-item mb-30">
-                <div class="work-card text-center">
-                    <div class="work-card__icon">
-                        <i class="las la-wallet base--color"></i>
-                        <span class="step-number">03</span>
-                    </div>
-                    <div class="work-card__content">
-                        <h4 class="base--color mb-3">Get Profit</h4>
-                    </div>
-                </div><!-- work-card end -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- how work section end  -->
-
 
 <!-- about section start -->
-<section class="about-section pt-120 pb-120 bg_img" data-background="assets/images/bg/bg-2.jpg">
+<section class="about-section pt-120 pb-120 bg_img" data-background="assets/images/bg/patrycja-chociej-ridmdLS6QbY-unsplash.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-6">
@@ -109,38 +56,6 @@ include("includes/header.php");
 </section>
 <!-- about section end -->
 
-<!-- cureency section start -->
-<div class="cureency-section">
-    <div class="container">
-        <div class="row mb-none-30">
-            <div class="col-lg-4 col-sm-6 cureency-item mb-30">
-                <div class="cureency-card text-center">
-                    <h6 class="cureency-card__title text-white">Countries Supported</h6>
-                    <span class="cureency-card__amount h-font-family font-weight-600 base--color">190+</span>
-                </div>
-                <!-- cureency-card end -->
-            </div>
-            <!-- cureency-item end -->
-            <div class="col-lg-4 col-sm-6 cureency-item mb-30">
-                <div class="cureency-card text-center">
-                    <h6 class="cureency-card__title text-white">Accounts Created</h6>
-                    <span class="cureency-card__amount h-font-family font-weight-600 base--color">13m+ Users</span>
-                </div>
-                <!-- cureency-card end -->
-            </div>
-            <!-- cureency-item end -->
-            <div class="col-lg-4 col-sm-6 cureency-item mb-30">
-                <div class="cureency-card text-center">
-                    <h6 class="cureency-card__title text-white">Date Established</h6>
-                    <span class="cureency-card__amount h-font-family font-weight-600 base--color">2018</span>
-                </div>
-                <!-- cureency-card end -->
-            </div>
-            <!-- cureency-item end -->
-        </div>
-    </div>
-</div>
-<!-- cureency section end  -->
 <!-- faq section start -->
 <section class="pt-120 pb-120">
     <div class="container">

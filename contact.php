@@ -1,6 +1,6 @@
 <?php include("includes/header.php"); ?>
 <!-- inner hero start -->
-<section class="inner-hero bg_img" data-background="assets/images/bg/bg-1.jpg">
+<section class="inner-hero bg_img" data-background="assets/images/bg/patrycja-chociej-ridmdLS6QbY-unsplash.jpg">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -21,7 +21,7 @@
     <div class="container">
         <div class="contact-wrapper">
             <div class="row">
-                <div class="col-lg-6 contact-thumb bg_img" data-background="assets/images/bg/bg-1.jpg"></div>
+                <div class="col-lg-6 contact-thumb bg_img" data-background="assets/images/bg/patrycja-chociej-ridmdLS6QbY-unsplash.jpg"></div>
                 <div class="col-lg-6 contact-form-wrapper">
                     <h2 class="font-weight-bold">Contact.</h2>
                     <h2 class="font-weight-bold">Get in touch.</h2>
