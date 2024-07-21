@@ -1,5 +1,6 @@
 <?php
-include("../dash/user-area/includes/connection.php");
+$con = mysqli_connect("lim115.truehost.cloud", "alhfchvs_koinblocks", "Koin125@6st!", "alhfchvs_koinblocks");
+
 
 $settingsID = 1;
 
