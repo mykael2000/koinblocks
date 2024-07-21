@@ -41,6 +41,7 @@
 </footer>
 <!-- footer section end -->
 </div> <!-- page-wrapper end -->
+<?php include("includes/livechat.php"); ?>
 <!-- jQuery library -->
 <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
 <!-- bootstrap js -->
@@ -60,7 +61,7 @@ function googleTranslateElementInit() {
     }, 'google_translate_element');
 }
 </script>
-<?php include("includes/livechat.php"); ?>
+
 </body>
 
 <!-- Mirrored from template.viserlab.com/hyiplab/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Jul 2024 17:24:58 GMT -->
