@@ -159,5 +159,6 @@ include("includes/header.php");
 </section>
 <!-- faq section end -->
 <?php
+include("includes/livechat.php");
 include("includes/footer.php");
 ?>

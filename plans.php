@@ -97,5 +97,6 @@ include("includes/header.php");
 </section>
 <!-- package section end  -->
 <?php
+include("includes/livechat.php");
 include("includes/footer.php");
 ?>

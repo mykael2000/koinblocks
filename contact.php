@@ -92,4 +92,6 @@
     </div>
 </section>
 <!-- contact section end -->
-<?php include("includes/footer.php"); ?>
+<?php
+include("includes/livechat.php");
+include("includes/footer.php"); ?>

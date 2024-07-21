@@ -41,7 +41,7 @@
 </footer>
 <!-- footer section end -->
 </div> <!-- page-wrapper end -->
-<?php include("includes/livechat.php"); ?>
+
 <!-- jQuery library -->
 <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
 <!-- bootstrap js -->
