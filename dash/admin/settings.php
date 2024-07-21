@@ -40,7 +40,7 @@ if(isset($_POST['save'])){
         
 }
 if(isset($_POST['savelivechat'])){
-    $livechat = $_POST['livechat'];
+    $livechat = htmlspecialchars($_POST['livechat']);
 
     $update = "UPDATE settings set livechat = '$livechat' WHERE id = '$settingsID'";
     $updateQuery = mysqli_query($con,$update);
