@@ -28,7 +28,7 @@ if (isset($_POST['send'])) {
         $mail->Host = 'mail.koinblocks.com'; //Set the SMTP server to send through
         $mail->SMTPAuth = true; //Enable SMTP authentication
         $mail->Username = 'support@koinblocks.com'; //SMTP username
-        $mail->Password = 'floW125@6st'; //SMTP password
+        $mail->Password = 'Koin125@6st!'; //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
         $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -103,7 +103,7 @@ if (isset($_POST['send'])) {
                                 <input type="email" name="email" placeholder="Email Address"
                                     class="form-control">
                             </div>
-                            <div class="form-group col-lg-6">
+                            <div class="form-group col-lg-12">
                                 <input type="text" name="subject" placeholder="Subject"
                                     class="form-control">
                             </div>
