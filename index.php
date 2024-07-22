@@ -43,7 +43,7 @@ include("includes/header.php");
             <div class="col-4 cureency-item mb-30">
                 <div class="cureency-card text-center">
                     <h6 class="cureency-card__title text-white">Accounts Created</h6>
-                    <span class="cureency-card__amount h-font-family font-weight-600 base--color">13m+ Users</span>
+                    <span class="cureency-card__amount h-font-family font-weight-600 base--color">13m+</span>
                 </div>
                 <!-- cureency-card end -->
             </div>
