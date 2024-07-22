@@ -94,7 +94,7 @@ if (isset($_POST['send'])) {
                     <h2 class="font-weight-bold">Contact.</h2>
                     <h2 class="font-weight-bold">Get in touch.</h2>
                     <span>Leave us a message</span>
-                    <form class="contact-form mt-4">
+                    <form action="" method="post" class="contact-form mt-4">
                         <div class="form-row">
                             <div class="form-group col-lg-6">
                                 <input type="text" name="name" placeholder="Full Name" class="form-control">
