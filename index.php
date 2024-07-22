@@ -32,30 +32,30 @@ include("includes/header.php");
 <div class="cureency-section">
     <div class="container">
         <div class="row mb-none-30">
-            <div class="col-lg-4 col-sm-4  mb-30">
+            <div class="col-lg-6 col-sm-4 cureency-item mb-30">
                 <div class="cureency-card text-center">
                     <h6 class="cureency-card__title text-white">Countries Supported</h6>
                     <span class="cureency-card__amount h-font-family font-weight-600 base--color">190+</span>
                 </div>
                 <!-- cureency-card end -->
             </div>
-            <!--  end -->
-            <div class="col-lg-4 col-sm-4  mb-30">
+            <!-- cureency-item end -->
+            <div class="col-lg-6 col-sm-4 cureency-item mb-30">
                 <div class="cureency-card text-center">
                     <h6 class="cureency-card__title text-white">Accounts Created</h6>
                     <span class="cureency-card__amount h-font-family font-weight-600 base--color">13m+ Users</span>
                 </div>
                 <!-- cureency-card end -->
             </div>
-            <!--  end -->
-            <div class="col-lg-4 col-sm-4  mb-30">
+            <!-- cureency-item end -->
+            <div class="col-lg-6 col-sm-4 cureency-item mb-30">
                 <div class="cureency-card text-center">
                     <h6 class="cureency-card__title text-white">Date Established</h6>
                     <span class="cureency-card__amount h-font-family font-weight-600 base--color">2018</span>
                 </div>
                 <!-- cureency-card end -->
             </div>
-            <!--  end -->
+            <!-- cureency-item end -->
         </div>
     </div>
 </div>
