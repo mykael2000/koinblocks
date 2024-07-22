@@ -97,17 +97,21 @@ if (isset($_POST['send'])) {
                     <form class="contact-form mt-4">
                         <div class="form-row">
                             <div class="form-group col-lg-6">
-                                <input type="text" name="contact-name" placeholder="Full Name" class="form-control">
+                                <input type="text" name="name" placeholder="Full Name" class="form-control">
                             </div>
                             <div class="form-group col-lg-6">
-                                <input type="email" name="contact-name" placeholder="Email Address"
+                                <input type="email" name="email" placeholder="Email Address"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <input type="text" name="subject" placeholder="Subject"
                                     class="form-control">
                             </div>
                             <div class="form-group col-lg-12">
                                 <textarea class="form-control" placeholder="Message"></textarea>
                             </div>
                             <div class="col-lg-12">
-                                <button type="submit" class="cmn-btn">Send Message</button>
+                                <button type="submit" name="send" class="cmn-btn">Send Message</button>
                             </div>
                         </div>
                     </form>
