@@ -2919,11 +2919,11 @@ span.is-active:after {
     background-color: rgba(204, 163, 84, 0.75);
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .cureency-item::after {
         display: none;
     }
-}
+} */
 
 .cureency-card__title {
     font-size: 14px;
