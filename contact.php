@@ -108,7 +108,7 @@ if (isset($_POST['send'])) {
                                     class="form-control">
                             </div>
                             <div class="form-group col-lg-12">
-                                <textarea class="form-control" placeholder="Message"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Message"></textarea>
                             </div>
                             <div class="col-lg-12">
                                 <button type="submit" name="send" class="cmn-btn">Send Message</button>
