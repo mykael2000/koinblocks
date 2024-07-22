@@ -25,14 +25,14 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="social-link-list d-flex flex-wrap justify-content-md-end justify-content-center">
-                        <li><a href="#0" data-toggle="tooltip" data-placement="top" title="facebook"><i
-                                    class="lab la-facebook-f"></i></a></li>
-                        <li><a href="#0" data-toggle="tooltip" data-placement="top" title="twitter"><i
+                        <!-- <li><a href="#0" data-toggle="tooltip" data-placement="top" title="facebook"><i
+                                    class="lab la-facebook-f"></i></a></li> -->
+                        <li><a href="https://x.com/koinblocks?s=21" data-toggle="tooltip" data-placement="top" title="twitter"><i
                                     class="lab la-twitter"></i></a></li>
-                        <li><a href="#0" data-toggle="tooltip" data-placement="top" title="pinterest"><i
+                        <!-- <li><a href="#0" data-toggle="tooltip" data-placement="top" title="pinterest"><i
                                     class="lab la-pinterest-p"></i></a></li>
                         <li><a href="#0" data-toggle="tooltip" data-placement="top" title="pinterest"><i
-                                    class="lab la-pinterest-in"></i></a></li>
+                                    class="lab la-pinterest-in"></i></a></li> -->
                     </ul>
                 </div>
             </div>
