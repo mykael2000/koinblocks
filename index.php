@@ -271,8 +271,8 @@ include("includes/header.php");
                 <!-- package-card end -->
             </div>
             <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-            <span class="flex justify-content-right badge base--bg text-dark">popular</span>
                 <div class="package-card text-center bg_img" data-background="assets/images/bg/bg-4.png">
+                <span class="flex justify-content-right badge base--bg text-dark">popular</span>
                     <h4 class="package-card__title base--color mb-2">GOLD</h4>
                     <ul class="package-card__features mt-4">
                         <li>Minimum: $50,000</li>
