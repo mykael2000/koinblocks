@@ -322,7 +322,9 @@ include("includes/header.php");
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2 class="">Find out more about Bitcoin</h2>
-        <p style="font-size: 16px; line-height:2; z-index: 99999999; padding-bottom: 50px;" class="mb-6 mb-md-8">
+        
+    </div><!-- End Section Title -->
+    <p style="font-size: 16px; line-height:2; z-index: 99999999; padding-bottom: 50px;" class="mb-6 mb-md-8">
             Our Bitcoin/Eth chart shows you the current Bitcoin/Eth price
             (abbreviation: BTC) as well as the Bitcoin market trend (Bitcoin
             charts). The price of bitcoin is shown to you in United States
@@ -337,8 +339,6 @@ include("includes/header.php");
             At the moment, you can start up a trade on Bitcoin or Eth with
             $700.
         </p>
-    </div><!-- End Section Title -->
-
     <div class="container">
         <div class="row">
             <!-- TradingView Widget BEGIN -->
