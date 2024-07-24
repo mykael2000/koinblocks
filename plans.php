@@ -45,7 +45,7 @@ include("includes/header.php");
                         <li>Instant Withdrawal</li>
                     </ul>
 
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
@@ -60,7 +60,7 @@ include("includes/header.php");
 
                     </ul>
 
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
@@ -74,7 +74,7 @@ include("includes/header.php");
                         <li>Instant Withdrawal</li>
 
                     </ul>
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
@@ -88,7 +88,7 @@ include("includes/header.php");
                         <li>Maximum: $5,000</li>
                         <li>Instant Withdrawal</li>
                     </ul>
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
