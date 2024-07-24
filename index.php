@@ -322,7 +322,7 @@ include("includes/header.php");
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2 class="">Find out more about Bitcoin</h2>
-        <p style="font-size: 16px; line-height:2; z-index: 99999999;" class="mb-6 mb-md-8">
+        <p style="font-size: 16px; line-height:2; z-index: 99999999; padding-bottom: 50px;" class="mb-6 mb-md-8">
             Our Bitcoin/Eth chart shows you the current Bitcoin/Eth price
             (abbreviation: BTC) as well as the Bitcoin market trend (Bitcoin
             charts). The price of bitcoin is shown to you in United States
@@ -330,7 +330,7 @@ include("includes/header.php");
             market price and the Bitcoin charts from the different
             marketplaces and stock exchanges . If you would like to start up a
             trade section, you can register here
-            <a style="color: #37517e; font-weight: 600" href="dash/auth/register.php">Get Started</a>
+            <a style="color: #37517e; font-weight: 600; z-index: 9999999999999;" href="dash/auth/register.php">Get Started</a>
             You can find out how to register or start up a trade on our
             Koinblocks FAQ below
             <a style="color: #37517e; font-weight: 600" href="faq.php">FAQ PAGE</a>
