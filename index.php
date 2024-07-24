@@ -322,7 +322,7 @@ include("includes/header.php");
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2 class="">Find out more about Bitcoin</h2>
-        <p style="font-size: 16px; line-height:2" class="mb-6 mb-md-8">
+        <p style="font-size: 16px; line-height:2; z-index: 99999999;" class="mb-6 mb-md-8">
             Our Bitcoin/Eth chart shows you the current Bitcoin/Eth price
             (abbreviation: BTC) as well as the Bitcoin market trend (Bitcoin
             charts). The price of bitcoin is shown to you in United States
