@@ -19,8 +19,8 @@ include("includes/header.php");
                         Koinblocks is an advanced online trading platform made so even investors with zero trading
                         experience are successfully making profit.<br>
                     </p>
-                    <a href="#0" class="cmn-btn text-uppercase font-weight-600 mt-4">Sign in</a>
-                    <a href="#0" class="cmn-btn text-uppercase font-weight-600 mt-4">Get Started</a>
+                    <a href="dash/auth/login.php" class="cmn-btn text-uppercase font-weight-600 mt-4">Sign in</a>
+                    <a href="dash/auth/register.php" class="cmn-btn text-uppercase font-weight-600 mt-4">Get Started</a>
                 </div>
             </div>
         </div>
@@ -266,7 +266,7 @@ include("includes/header.php");
                         <li>Instant Withdrawal</li>
                     </ul>
 
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
@@ -282,7 +282,7 @@ include("includes/header.php");
 
                     </ul>
 
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
@@ -295,7 +295,7 @@ include("includes/header.php");
                         <li>Instant Withdrawal</li>
 
                     </ul>
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
@@ -308,7 +308,7 @@ include("includes/header.php");
                         <li>Maximum: $5,000</li>
                         <li>Instant Withdrawal</li>
                     </ul>
-                    <a href="#0" class="cmn-btn btn-md mt-4">Get Started</a>
+                    <a href="dash/auth/register.php" class="cmn-btn btn-md mt-4">Get Started</a>
                 </div>
                 <!-- package-card end -->
             </div>
