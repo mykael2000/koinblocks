@@ -321,9 +321,11 @@ include("includes/header.php");
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2 class="">Find out more about Bitcoin</h2>
+        
         <div class="row justify-content-center mb-none-30">
-            <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
+        
+            <div class="col-xl-10 col-lg-10 col-md-10 mb-30">
+            <h2 class="">Find out more about Bitcoin</h2>
             <p style="font-size: 16px; z-index: 99999999; padding-bottom: 50px;" class="mb-6 mb-md-8">
             Our Bitcoin/Eth chart shows you the current Bitcoin/Eth price
             (abbreviation: BTC) as well as the Bitcoin market trend (Bitcoin
